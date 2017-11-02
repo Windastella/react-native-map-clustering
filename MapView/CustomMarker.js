@@ -45,27 +45,27 @@ export default class CustomMarker extends Component {
         let markerWidth, markerHeight, textSize;
         let point_count = this.state.point_count;
 
-        if(point_count>=2 && point_count<=10){
+        if(point_count>=5 && point_count<=10){
             textForCluster = point_count.toString();
             markerWidth = width*2/15;
             markerHeight = width*2/15;
             textSize = height/40;
-        }if(point_count>10&&point_count<=25){
+        }if(point_count>10&&point_count<=100){
             textForCluster = point_count.toString();
             markerWidth = width/7;
             markerHeight = width/7;
             textSize = height/40;
-        }if(point_count>25&&point_count<=50){
+        }if(point_count>100&&point_count<=500){
             textForCluster = point_count.toString();
             markerWidth = width*2/13;
             markerHeight = width*2/13;
             textSize = height/40;
-        }if(point_count>50&&point_count<=100){
+        }if(point_count>500&&point_count<=1000){
             textForCluster = point_count.toString();
             markerWidth = width/6;
             markerHeight = width/6;
             textSize = height/38;
-        }if(point_count>100){
+        }if(point_count>1000){
             textForCluster = point_count.toString();
             markerWidth = width*2/11;
             markerHeight = width*2/11;
